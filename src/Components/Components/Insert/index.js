@@ -71,8 +71,7 @@ function adiciona(event) {
 function removerItem(item) {
   let tarefas = JSON.parse(localStorage.getItem("items"));
   let inicial = tarefas.indexOf(item);
-  let final = inicial + 1;
-  tarefas.splice(inicial,final);
+  tarefas.splice(inicial, 1);
   localStorage.setItem("items", JSON.stringify(tarefas))
 }
 
